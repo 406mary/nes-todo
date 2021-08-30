@@ -1,0 +1,26 @@
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  body {
+      background-color: black !important;
+      color: white;
+  }
+
+  h1 {
+      color: white;
+  }
+
+table {
+    margin-top: 50px !important;
+    background-color: black !important;
+    color: white;
+}
+
+p{
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+    margin-left: 60px !important;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./scripts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <script src="./scripts/client.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        
+        <h1>Mary's ToDo List</h1>
+        <div>
+            <p class="nes-balloon from-left nes-pointer is-dark">
+                Hey... let's get some stuff done!!!
+            </p>
+            <br>
+            
+            <i class="nes-mario"></i>
+        
+            <input type="text" class = "nes-input is-dark" id = "title-in" placeholder="Task Title">
+            <input type="text" class = "nes-input is-dark" id = "description-in" placeholder="Task Description">
+            <button id = "add-task" class = "nes-btn is-primary">Add Task</button>
+        </div>
+      
+        <table class="nes-table is-bordered is-centered">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date Added</th>
+                    <th>Complete?</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id = "task-table"></tbody>
+        </table>
+    </main>
+</body>
+</html>
