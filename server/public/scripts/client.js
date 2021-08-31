@@ -23,7 +23,21 @@ function getTasks() {
 function displayTasks(taskList) {
     // append each task out ofthe list 
     let taskTable = $('#task-table');
+    let taskHeader = $('#task-header');
     taskTable.empty();
+    taskHeader.empty();
+
+    let headers = ` 
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date Added</th>
+        <th>Complete?</th>
+        <th></th>
+        <th></th>`;
+
+    if(taskList.length > 0) {
+        taskHeader.append(headers);
+    }
 
     for (let task of taskList) { // aappending tasks
         let taskButtonText = '';
